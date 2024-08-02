@@ -1,6 +1,6 @@
 ﻿#include "../exercise.h"
 #include <vector>
-
+#include <cstring>
 // READ: std::vector <https://zh.cppreference.com/w/cpp/container/vector_bool>
 // READ: 模板特化 <https://zh.cppreference.com/w/cpp/language/template_specialization>
 
@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
     ASSERT(vec[0], "Make this assertion pass.");
     ASSERT(vec[99], "Make this assertion pass.");
     ASSERT(vec.size() == 100, "Make this assertion pass.");
-    
+
     ASSERT(sizeof(vec) == 24, "Fill in the correct value.");
     {
         vec[20] = false;
